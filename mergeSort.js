@@ -4,8 +4,7 @@ const merge = (leftArr, rightArr) => {
   let leftIndex = 0;
   let rightIndex = 0;
   let isRightLargerThanLeft = false;
-  console.log("rightArr: ", rightArr);
-  console.log("leftArr: ", leftArr);
+
   while (leftIndex < leftArr.length && rightIndex < rightArr.length) {
     const leftNum = leftArr[leftIndex];
     const rightNum = rightArr[rightIndex];
@@ -41,7 +40,3 @@ const mergeSort = (arr) => {
   return merge(mergeSort(leftArr), mergeSort(rightArr));
 };
 
-//console.log(mergeSort([1,9,3,19,2,39,4,333,89,98]))
-
-console.log(mergeSort([6, 5, 4, 3, 2, 1]));
-console.log(count);
