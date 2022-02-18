@@ -39,4 +39,4 @@ const mergeSort = (arr) => {
 
   return merge(mergeSort(leftArr), mergeSort(rightArr));
 };
-
+//
